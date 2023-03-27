@@ -1,0 +1,25 @@
+<div class="row mt-5 div1">
+    <div class="col-lg-8 offset-lg-2">
+        <div class="card" >
+            <div class="card-body">
+                <h1>Crear Producto</h1>
+
+                Producto: <input type="text" placeholder="Producto" class="form-control" [(ngModel)]="nombre" required>
+                <br>
+                
+                Categoria: <input type="text" placeholder="Categoria" class="form-control" [(ngModel)]="categoria" required>
+                <br>
+                
+                Ubicacion: <input type="text" placeholder="Ubicacion" class="form-control" [(ngModel)]="ubicacion" required>
+                <br>
+                
+                Precio: <input type="number" placeholder="Precio" class="form-control" [(ngModel)]="precio" required>
+                <br>
+                
+                <button class="btn btn-primary" (click)="agregarProducto()">Ingresar Producto</button>
+
+                <button class="btn btn-primary float-end" routerLink="/">Volver a Inicio</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="row mt-5 div1">
+    <div class="col-lg-8 offset-lg-2">
+        <div class="card" >
+            <div class="card-body">
+                <h1>Actualizar Producto</h1>
+
+                Producto: <input type="text" placeholder="Producto" name="producto" id="producto" class="form-control" 
+                [(ngModel)]="nombre">
+                <br>
+                
+                Categoria: <input type="text" placeholder="Categoria" name="categoria" id="categoria" class="form-control" 
+                [(ngModel)]="categoria">
+                <br>
+                
+                Ubicacion: <input type="text" placeholder="Ubicacion" name="ubicacion" id="ubicacion" class="form-control" 
+                [(ngModel)]="ubicacion">
+                <br>
+                
+                Precio: <input type="number" placeholder="Precio" name="precio" id="precio" class="form-control" 
+                [(ngModel)]="precio">
+                <br>
+                
+                <button class="btn btn-primary" (click)="modificarProducto()" >Actualizar Producto</button>
+
+                <button class="btn btn-primary float-end" routerLink="/">Volver a Inicio</button>
+            </div>
+        </div>
+    </div>
+</div>
